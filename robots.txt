@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wecodeo.vercel.app/sitemap.xml

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Wecodeo - Jasa Pembuatan Website Profesional untuk UMKM</title>
+    <meta name="description" content="Punya produk bagus tapi gak dipercaya karena gak ada website? Kami bantu bisnis kamu naik level dengan website profesional, cepat jadi, dan bikin pelanggan yakin.">
+    <meta name="keywords" content="jasa website, buat website, website umkm, website profesional, wecodeo, website bekasi, jasa website murah">
+    <meta name="author" content="Wecodeo">
+
+    <link href="./assets/css/output.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script defer src="./assets/js/alpine.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Menggunakan font Poppins sebagai default */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Styling untuk FAQ accordion agar transisi lebih halus */
+        [x-cloak] { display: none !important; }
+    </style>
+
+</head>
+<body class="bg-slate-900 text-slate-300 antialiased">
+
+    <header x-data="{ isOpen: false }" class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                Wecodeo<span class="text-blue-400">.</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#fitur" class="hover:text-blue-400 transition-colors">Fitur</a>
+                <a href="#proses" class="hover:text-blue-400 transition-colors">Proses</a>
+                <a href="#harga" class="hover:text-blue-400 transition-colors">Harga</a>
+                <a href="#faq" class="hover:text-blue-400 transition-colors">FAQ</a>
+            </div>
+            <a href="#kontak" class="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-transform hover:scale-105">
+                Konsultasi Gratis
+            </a>
+            <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div x-show="isOpen" @click.away="isOpen = false" class="md:hidden bg-slate-800" x-cloak>
+            <a href="#fitur" class="block py-2 px-6 text-sm hover:bg-slate-700">Fitur</a>
+            <a href="#proses" class="block py-2 px-6 text-sm hover:bg-slate-700">Proses</a>
+            <a href="#harga" class="block py-2 px-6 text-sm hover:bg-slate-700">Harga</a>
+            <a href="#faq" class="block py-2 px-6 text-sm hover:bg-slate-700">FAQ</a>
+            <a href="#kontak" class="block py-4 px-6 text-center bg-blue-600 text-white font-semibold">Konsultasi Gratis</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative pt-20 pb-24 md:pt-32 md:pb-36 text-center">
+             <div class="absolute inset-0 bg-gradient-to-b from-slate-900 to-slate-800 opacity-50"></div>
+             <div class="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+             <div class="absolute bottom-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl animate-pulse animation-delay-400"></div>
+            <div class="container mx-auto px-6 relative">
+                <h1 data-aos="fade-up" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                    <span class="bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">Punya Produk Bagus Tapi Gak Dipercaya</span> Karena Gak Ada Website?
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="200" class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-300">
+                    Bikin orang percaya itu susah — apalagi kalau bisnismu gak bisa dicari di Google dan cuma main Instagram. Saatnya bisnis kamu naik level secara digital.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="300" class="mt-4 max-w-3xl mx-auto text-lg font-semibold text-white">
+                    Kami bantu kamu punya website yang profesional, cepat jadi, dan bikin calon pelanggan langsung yakin.
+                </p>
+                <div data-aos="fade-up" data-aos-delay="400" class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#kontak" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-transform hover:scale-105 text-lg">
+                        🔵 KONSULTASI GRATIS SEKARANG
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Wecodeo,%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website." target="_blank" class="w-full sm:w-auto text-white font-semibold">
+                        📞 atau langsung Chat via WhatsApp
+                    </a>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="500" class="mt-12 flex justify-center items-center gap-x-6 gap-y-3 flex-wrap text-sm font-medium">
+                    <span class="flex items-center gap-2">📱 100% Mobile Friendly</span>
+                    <span class="text-slate-500 hidden sm:inline">|</span>
+                    <span class="flex items-center gap-2">⚡ Siap Online dalam 7 Hari</span>
+                    <span class="text-slate-500 hidden sm:inline">|</span>
+                    <span class="flex items-center gap-2">💬 Terintegrasi WhatsApp</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-slate-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Jangan-jangan kamu seperti ini...</h2>
+                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">Jualan bagus di Instagram, tapi banyak calon pelanggan bilang: "Ada websitenya nggak, Pak/Bu?"</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                        <h3 class="text-xl font-semibold text-white">Bingung Teknis</h3>
+                        <p class="mt-2 text-slate-400">Pernah coba bikin sendiri tapi bingung: “Apa itu hosting, domain, SSL, plugin...?”</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                        <h3 class="text-xl font-semibold text-white">Jasa Lain Mengecewakan</h3>
+                        <p class="mt-2 text-slate-400">Sudah capek cari jasa, tapi yang kamu temui: <span class="text-red-400 font-semibold">Mahal, Lama, dan Ribet</span>.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                        <h3 class="text-xl font-semibold text-white">Hasil Tidak Sesuai</h3>
+                        <p class="mt-2 text-slate-400">Udah keluar biaya, tapi hasilnya gak sesuai harapan dan sulit dihubungi setelahnya.</p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="400" class="mt-12 bg-yellow-900/20 border-l-4 border-yellow-400 p-6 rounded-lg max-w-4xl mx-auto">
+                    <p class="text-yellow-200 text-lg font-medium">🚨 Kamu bukan gagal. Kamu cuma belum ketemu tim yang ngerti cara bantu bisnis kecil tampil profesional <span class="font-bold">tanpa bikin stres.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white leading-snug">Kami Buat Website Seperti Kamu Buka Toko Baru — Bedanya, Ini <span class="text-blue-400">24 Jam Online</span> & Bisa Diakses dari Mana Saja.</h2>
+                        <p class="mt-6 text-slate-300 text-lg">🔧 <span class="font-semibold text-white">Kami Bukan Cuma Bikin Website — Kami Bantu Bikin Orang Percaya Sama Bisnismu.</span> Dengan tim berpengalaman membangun puluhan website UMKM & brand lokal, kami tahu:</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Gaya desain seperti apa yang <span class="font-bold">dipercaya orang.</span></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Struktur konten yang bikin orang <span class="font-bold">klik tombol WA.</span></span>
+                            </li>
+                             <li class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Cara kerja yang <span class="font-bold">gak ribet</span> dan gak makan waktu kamu.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="200" class="mt-10 lg:mt-0">
+                        <img src="https://images.unsplash.com/photo-1559028006-44a3a2f03a64?q=80&w=1780&auto=format&fit=crop" alt="Tim Wecodeo sedang berdiskusi" class="rounded-lg shadow-2xl shadow-blue-900/30">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fitur" class="py-20 bg-slate-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">🚀 Fitur Website Kami</h2>
+                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">Dirancang Khusus untuk UMKM Sepertimu, fokus pada manfaat langsung.</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <div data-aos="fade-up" class="bg-slate-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-xl font-bold text-white">✅ Mobile Friendly</h3>
+                        <p class="mt-3 text-slate-400">Pelanggan bisa akses dari HP — 80% traffic datang dari sini.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-xl font-bold text-white">✅ WhatsApp Button</h3>
+                        <p class="mt-3 text-slate-400">Pengunjung bisa langsung chat kamu tanpa simpan nomor.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-xl font-bold text-white">✅ SEO Dasar</h3>
+                        <p class="mt-3 text-slate-400">Website kamu bisa muncul di pencarian Google untuk kata kunci dasar.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-xl font-bold text-white">✅ Domain & Hosting</h3>
+                        <p class="mt-3 text-slate-400">Gak usah pusing cari sendiri, semua kami urus sampai online.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400" class="bg-slate-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-xl font-bold text-white">✅ Desain Custom</h3>
+                        <p class="mt-3 text-slate-400">Tidak pakai template generik, kami sesuaikan dengan brand bisnismu.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="500" class="bg-slate-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform">
+                        <h3 class="text-xl font-bold text-white">✅ Maintenance Gratis</h3>
+                        <p class="mt-3 text-slate-400">Kami dampingi dan pastikan semua aman setelah peluncuran (1 bulan).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proses" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">📋 Alur Kerja Kami (Tanpa Ribet, Tanpa Drama)</h2>
+                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">Proses cepat: 7–10 hari kerja.</p>
+                </div>
+                <div class="mt-16 max-w-4xl mx-auto">
+                    <div class="relative">
+                        <div class="hidden md:block absolute top-0 left-1/2 w-0.5 h-full bg-slate-700" data-aos="zoom-in" data-aos-delay="200"></div>
+                        <div class="md:flex items-center md:justify-normal md:w-1/2 md:pr-8" data-aos="fade-right">
+                            <div class="md:text-right">
+                                <p class="text-blue-400 font-semibold">Langkah 1</p>
+                                <h3 class="text-2xl font-bold text-white mt-1">Konsultasi Awal (Gratis)</h3>
+                                <p class="text-slate-400 mt-2">Kamu cerita, kami dengar & bantu arahkan kebutuhan websitemu.</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 md:mt-0 md:flex items-center md:flex-row-reverse md:justify-normal md:w-1/2 md:ml-auto md:pl-8" data-aos="fade-left">
+                            <div class="md:text-left">
+                                <p class="text-blue-400 font-semibold">Langkah 2</p>
+                                <h3 class="text-2xl font-bold text-white mt-1">Desain & Struktur</h3>
+                                <p class="text-slate-400 mt-2">Kami bikin mockup sesuai kebutuhanmu. Bisa direvisi sampai cocok.</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 md:mt-16 md:flex items-center md:justify-normal md:w-1/2 md:pr-8" data-aos="fade-right">
+                            <div class="md:text-right">
+                                <p class="text-blue-400 font-semibold">Langkah 3</p>
+                                <h3 class="text-2xl font-bold text-white mt-1">Pembuatan & Optimasi</h3>
+                                <p class="text-slate-400 mt-2">Kami kembangkan website & optimasi untuk SEO + kecepatan.</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 md:mt-16 md:flex items-center md:flex-row-reverse md:justify-normal md:w-1/2 md:ml-auto md:pl-8" data-aos="fade-left">
+                            <div class="md:text-left">
+                                <p class="text-blue-400 font-semibold">Langkah 4</p>
+                                <h3 class="text-2xl font-bold text-white mt-1">Live & Dipantau</h3>
+                                <p class="text-slate-400 mt-2">Website online. Kamu kami ajari update + support teknis 30 hari.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-slate-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Apa Kata Mereka yang Sudah Percaya?</h2>
+                </div>
+                <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 relative" data-aos="fade-up">
+                        <blockquote class="text-slate-300 italic text-lg">
+                            “Dulu saya cuma jualan kue lewat IG. Banyak yang ragu karena gak punya website. Setelah pakai jasa ini, saya kelihatan lebih profesional. Bahkan sekarang reseller saya pakai link website untuk order.”
+                        </blockquote>
+                        <cite class="mt-6 block not-italic">
+                            <p class="font-bold text-white">Mbak Yuni</p>
+                            <p class="text-sm text-slate-400">Pemilik YunaCake.id</p>
+                        </cite>
+                    </div>
+                     <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 relative" data-aos="fade-up" data-aos-delay="200">
+                        <blockquote class="text-slate-300 italic text-lg">
+                           “Awalnya takut ribet karena saya gak ngerti apa-apa soal web. Tapi tim ini sabar banget. Saya tinggal WA, semua diurus. Sekarang bisnis saya punya wajah digital sendiri.”
+                        </blockquote>
+                        <cite class="mt-6 block not-italic">
+                            <p class="font-bold text-white">Pak Budi</p>
+                            <p class="text-sm text-slate-400">Servis Elektronik di Bekasi</p>
+                        </cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="harga" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">💰 Paket Website Siap Pakai</h2>
+                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">Transparan, tanpa biaya tersembunyi. Pilih yang paling sesuai untukmu.</p>
+                </div>
+
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+                    <div class="bg-slate-800 p-8 rounded-lg border border-slate-700" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold text-blue-400">Starter</h3>
+                        <p class="mt-2 text-slate-400">Personal / Produk Satu Jenis</p>
+                        <p class="mt-6 text-4xl font-bold text-white">Rp 1.250.000</p>
+                        <ul class="mt-6 space-y-3 text-slate-300">
+                            <li class="flex items-center gap-3">✅ 1 Halaman Landing Page</li>
+                            <li class="flex items-center gap-3">✅ Tombol WhatsApp</li>
+                            <li class="flex items-center gap-3">✅ Domain & Hosting (1 thn)</li>
+                            <li class="flex items-center gap-3">✅ SEO Basic</li>
+                        </ul>
+                        <a href="#kontak" class="mt-8 block w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors">Pilih Paket</a>
+                    </div>
+
+                    <div class="bg-blue-900/50 p-8 rounded-lg border-2 border-blue-500 transform lg:scale-105 relative" data-aos="fade-up" data-aos-delay="150">
+                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Paling Populer</span>
+                        <h3 class="text-2xl font-bold text-blue-300">Business</h3>
+                        <p class="mt-2 text-slate-300">UMKM Jasa / Toko</p>
+                        <p class="mt-6 text-4xl font-bold text-white">Rp 2.750.000</p>
+                        <ul class="mt-6 space-y-3 text-slate-200">
+                            <li class="flex items-center gap-3">✅ 3–5 Halaman</li>
+                             <li class="flex items-center gap-3">✅ Portofolio / Galeri</li>
+                            <li class="flex items-center gap-3">✅ Form Kontak</li>
+                            <li class="flex items-center gap-3">✅ SEO Lanjutan</li>
+                            <li class="flex items-center gap-3">✅ Desain Responsif Premium</li>
+                        </ul>
+                        <a href="#kontak" class="mt-8 block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform hover:scale-105">Pilih Paket</a>
+                    </div>
+                    
+                    <div class="bg-slate-800 p-8 rounded-lg border border-slate-700" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-2xl font-bold text-blue-400">Custom Pro</h3>
+                        <p class="mt-2 text-slate-400">Brand dengan kebutuhan khusus</p>
+                        <p class="mt-6 text-4xl font-bold text-white">Mulai Rp 4.5jt</p>
+                        <ul class="mt-6 space-y-3 text-slate-300">
+                             <li class="flex items-center gap-3">✅ Desain Bebas & Eksklusif</li>
+                             <li class="flex items-center gap-3">✅ Fitur Blog / Artikel</li>
+                             <li class="flex items-center gap-3">✅ Multi-page (tidak terbatas)</li>
+                             <li class="flex items-center gap-3">✅ Fitur Ekstra (Sesuai Request)</li>
+                        </ul>
+                        <a href="#kontak" class="mt-8 block w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors">Hubungi Kami</a>
+                    </div>
+                </div>
+                 <div class="mt-12 text-center bg-slate-800 p-6 rounded-lg max-w-3xl mx-auto" data-aos="zoom-in">
+                    <h4 class="font-bold text-xl text-white">🎁 Bonus Untuk Semua Paket:</h4>
+                    <p class="text-slate-300 mt-3">✅ Gratis domain .com & hosting 1 tahun ✅ Revisi desain sampai cocok ✅ Dukungan teknis pasca-live</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-slate-900">
+            <div class="container mx-auto px-6" data-aos="fade-up">
+                 <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-white">🔐 Kami Jamin, Kamu Tenang</h2>
+                    <p class="mt-3 text-slate-400">Kami ingin kamu puas, bukan sekadar selesai. Kepercayaanmu adalah prioritas utama.</p>
+                </div>
+                <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="bg-slate-800 p-6 rounded-lg">
+                        <p class="font-semibold text-white">✅ Tidak Ada Biaya Tersembunyi</p>
+                    </div>
+                     <div class="bg-slate-800 p-6 rounded-lg">
+                        <p class="font-semibold text-white">✅ Semua Akses Milikmu</p>
+                    </div>
+                     <div class="bg-slate-800 p-6 rounded-lg">
+                        <p class="font-semibold text-white">✅ Uang Kembali*</p>
+                        <span class="text-xs text-slate-500">(*jika tidak selesai)</span>
+                    </div>
+                     <div class="bg-slate-800 p-6 rounded-lg">
+                        <p class="font-semibold text-white">✅ Revisi Sesuai Kesepakatan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="faq" class="py-20">
+            <div class="container mx-auto px-6 max-w-4xl">
+                 <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">❓ Yang Sering Ditanya (FAQ)</h2>
+                </div>
+                <div x-data="{ open: 1 }" class="mt-10 space-y-4">
+                    <div class="bg-slate-800 rounded-lg" data-aos="fade-up">
+                        <h2>
+                            <button type="button" @click="open = (open === 1 ? null : 1)" class="flex items-center justify-between w-full p-6 font-semibold text-left text-white">
+                                <span>Saya gaptek, apa bisa tetap punya website?</span>
+                                <svg :class="{'rotate-180': open === 1}" class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                        </h2>
+                        <div x-show="open === 1" x-collapse class="p-6 pt-0 text-slate-400">
+                            <p>👉 Sangat bisa! Justru layanan kami dirancang untuk orang yang gaptek sekalipun. Kamu cukup sediakan materi (teks, foto), sisanya kami yang urus dari A sampai Z. Kamu terima beres.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                        <h2>
+                             <button type="button" @click="open = (open === 2 ? null : 2)" class="flex items-center justify-between w-full p-6 font-semibold text-left text-white">
+                                <span>Bisa revisi?</span>
+                                <svg :class="{'rotate-180': open === 2}" class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                        </h2>
+                        <div x-show="open === 2" x-collapse class="p-6 pt-0 text-slate-400">
+                            <p>👉 Ya. Kami buka 2–3x sesi revisi desain di awal untuk memastikan hasilnya benar-benar sesuai dengan seleramu sebelum masuk tahap pembuatan.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                        <h2>
+                            <button type="button" @click="open = (open === 3 ? null : 3)" class="flex items-center justify-between w-full p-6 font-semibold text-left text-white">
+                                <span>Ada pelatihan cara update website?</span>
+                                <svg :class="{'rotate-180': open === 3}" class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                        </h2>
+                        <div x-show="open === 3" x-collapse class="p-6 pt-0 text-slate-400">
+                            <p>👉 Ada. Kami akan berikan panduan video singkat yang mudah diikuti dan support langsung lewat WhatsApp jika kamu ada pertanyaan saat mau update konten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-24 bg-gradient-to-t from-blue-900/40 to-transparent">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 data-aos="zoom-in" class="text-4xl md:text-5xl font-extrabold text-white">🔥 Saatnya Bisnismu Tampil Lebih Profesional & Dipercaya.</h2>
+                    <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-lg text-slate-300">
+                        Karena calon pelanggan akan bandingkan bisnismu dengan yang lain. Dan yang punya website, selalu kelihatan lebih serius & terpercaya.
+                    </p>
+                    <blockquote data-aos="fade-up" data-aos-delay="300" class="mt-8 text-xl italic text-blue-300 border-l-4 border-blue-400 pl-4 text-left max-w-md mx-auto">
+                        "Saya bisa bantu, mulai dari ide sampai websitemu online dan siap digunakan."
+                    </blockquote>
+                    <div data-aos="fade-up" data-aos-delay="400" class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a href="#kontak-form" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-transform hover:scale-105 text-lg">
+                            🔘 KONSULTASI GRATIS SEKARANG
+                        </a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Wecodeo,%20saya%20mau%20konsultasi%20gratis%20untuk%20pembuatan%20website." target="_blank" class="w-full sm:w-auto text-white font-semibold">
+                            📞 atau Chat Langsung via WhatsApp
+                        </a>
+                    </div>
+                    <p data-aos="fade-up" data-aos-delay="500" class="mt-8 text-sm text-yellow-300 font-semibold">💡 Kuota proyek kami dibatasi per bulan agar tetap maksimal. Amankan slot-mu sekarang.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-500 text-sm">
+            <p>&copy; 2025 Wecodeo. All Rights Reserved. Dibuat untuk membantu UMKM Indonesia naik kelas.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Durasi animasi
+            once: true,    // Animasi hanya berjalan sekali
+        });
+    </script>
+</body>
+</html>
